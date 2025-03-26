@@ -38,7 +38,7 @@
 
 .menuBtn {
     display: none;
-    padding-top: 6px;
+    padding-top: 8px;
 
     /* border: 2px solid yellow; */
 }
@@ -73,7 +73,7 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
-        z-index: 3;
+        z-index: 1;
     }
 
     .menuBtn {
@@ -87,7 +87,7 @@
         align-items: center;
         gap: 30px;
         border-radius: 10px;
-        background: #1c2e4a;
+        background: rgba(28, 46, 74, 0.9);
         padding: 20px 20px;
     }
 
