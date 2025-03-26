@@ -8,8 +8,9 @@ const heroBg = getImageUrl("heroBg.svg");
 
 export const Hero = () => {
     return (
-        <Box component="section" className="container"
+        <Box id='home' component="section" className="container"
             sx={{
+                scrollMarginTop: '100px',
                 position: 'relative',
                 width: '100%',
                 minHeight: {

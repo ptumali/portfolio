@@ -10,8 +10,9 @@ const handleClick = () => {
 
 export const About = () => {
     return (
-        <Box component='section' className='container'
+        <Box id='about' component='section' className='container'
             sx={{
+                scrollMarginTop: '100px',
                 position: 'relative',
                 overflow: 'hidden',
                 width: '100%',
@@ -48,12 +49,24 @@ export const About = () => {
                 {/* Avatar-Icon */}
                 <Avatar src={getImageUrl('profileAvatar.png')} alt='Profile-Avatar'
                     sx={{
-                        width: '150px',
-                        height: '150px',
+                        width: '200px',
+                        height: '200px',
+                        animation: 'float 3s ease-in-out infinite',
+                        '@keyframes float': {
+                            '0%': {
+                                transform: 'translateY(0px)',
+                            },
+                            '50%': {
+                                transform: 'translateY(-10px)',
+                            },
+                            '100%': {
+                                transform: 'translateY(0px)',
+                            },
+                        }
                     }} />
 
                 {/* About-Description */}
-                <Grid container spacing={4} justifyContent='center'>
+                < Grid container spacing={4} justifyContent='center'>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant='body1'>
                             Greetings! I am Peter, an aspiring software engineer and a computer science student at UC Irvine. I enjoy exploring web development, embedded systems, networks systems, and more.
