@@ -1,6 +1,6 @@
 import React from 'react'
 import { getImageUrl } from '../../utils'
-import { Box, Typography, Stack, Avatar, Chip } from '@mui/material/'
+import { Box, Typography, Avatar, Chip } from '@mui/material/'
 import Grid from '@mui/material/Grid2'
 
 
@@ -12,7 +12,6 @@ export const About = () => {
     return (
         <Box id='about' component='section' className='container'
             sx={{
-                scrollMarginTop: '100px',
                 position: 'relative',
                 overflow: 'hidden',
                 width: '100%',
@@ -25,9 +24,9 @@ export const About = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 padding: {
-                    xs: '50px 50px',
-                    sm: '50px 80px',
-                    md: '50px 100px',
+                    xs: '120px 50px',
+                    sm: '120px 80px',
+                    md: '120px 100px',
                 },
                 zIndex: 30,
             }}>
@@ -49,8 +48,8 @@ export const About = () => {
                 {/* Avatar-Icon */}
                 <Avatar src={getImageUrl('profileAvatar.png')} alt='Profile-Avatar'
                     sx={{
-                        width: '200px',
-                        height: '200px',
+                        width: '150px',
+                        height: '150px',
                         animation: 'float 3s ease-in-out infinite',
                         '@keyframes float': {
                             '0%': {
