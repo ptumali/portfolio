@@ -11,6 +11,7 @@
     padding: 20px 50px;
     z-index: 50;
     background-color: var(--color-primary);
+    border-bottom: 0.5pt solid #F5F5FF;
     /* border: 2pt solid red; */
 }
 
@@ -89,7 +90,7 @@
         align-items: center;
         gap: 30px;
         border-radius: 10px;
-        background: rgba(28, 46, 74, 0.9);
+        background: rgba(28, 46, 74, 0.8);
         padding: 20px 20px;
     }
 

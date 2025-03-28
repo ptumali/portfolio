@@ -1,8 +1,8 @@
 import React from 'react'
 import { getImageUrl } from '../../utils'
-import { Box, Typography, Avatar, Chip } from '@mui/material/'
-import Grid from '@mui/material/Grid2'
+import { Box, Typography, Avatar, Chip, Grid } from '@mui/material'
 
+const codeIcon = getImageUrl('codeIcon.svg')
 
 const handleClick = () => {
     console.info('You clicked the Chip.');
@@ -24,8 +24,8 @@ export const About = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 padding: {
-                    xs: '120px 50px',
-                    sm: '120px 80px',
+                    xs: '50px 50px',
+                    sm: '100px 80px',
                     md: '120px 100px',
                 },
                 zIndex: 30,
@@ -76,9 +76,19 @@ export const About = () => {
                     </Grid>
 
                     <Grid size={{ sm: 12, md: 6 }}>
-                        <Typography variant='h3' marginBottom="14px">
-                            Tools & Technologies
-                        </Typography>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                gap: 1,
+                                mb: 2,
+                            }}>
+                            <Box component="img" src={codeIcon}
+                                sx={{ height: '25px' }} />
+                            <Typography variant='h3'>
+                                Tools & Technologies
+                            </Typography>
+                        </Box>
+
                         <Grid container spacing={1}>
                             {['Python', 'Java', 'C++', 'C', 'JavaScript', 'HTML/CSS',
                                 'React', 'MySQL', 'PostgreSQL', 'NodeJS', 'Git', 'More...'

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { getImageUrl } from '../../utils'
-import { Box, Button, Typography, Stack } from '@mui/material/'
+import { Box, Button, Typography, Stack } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -25,7 +25,11 @@ export const Hero = () => {
                 backgroundRepeat: 'no-repeat',
                 display: 'flex',
                 flexDirection: 'column',
-                padding: '120px 70px',
+                padding: {
+                    xs: '50px 50px',
+                    sm: '100px 80px',
+                    md: '120px 100px',
+                },
                 zIndex: 40,
             }}>
 

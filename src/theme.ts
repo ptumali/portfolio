@@ -24,7 +24,9 @@ let theme = createTheme({
             color: 'white',
             fontWeight: 700,
             fontSize: '20px',
-            textAlign: 'center'
+            textAlign: 'center',
+            px: 0,
+            mx: 0,
         },
         h5: {
             color: 'white',
