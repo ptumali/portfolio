@@ -1,3 +1,4 @@
+import { Directions } from '@mui/icons-material';
 import { getImageUrl } from '../../utils'
 import { Box, Typography, Avatar, Chip, Grid } from '@mui/material'
 
@@ -38,17 +39,20 @@ export const About = () => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     gap: '50px',
-                    zIndex: 31,
+                    zIndex: 31
                 }}>
 
                 {/* About-Title */}
                 <Typography variant='h2' className='title'>About</Typography>
 
                 {/* Avatar-Icon */}
-                <Avatar src={getImageUrl('profileAvatar.png')} alt='Profile-Avatar'
+                <Box
                     sx={{
-                        width: '150px',
-                        height: '150px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        gap: 0.5,
                         animation: 'float 3s ease-in-out infinite',
                         '@keyframes float': {
                             '0%': {
@@ -61,7 +65,28 @@ export const About = () => {
                                 transform: 'translateY(0px)',
                             },
                         }
-                    }} />
+                    }}>
+                    <Avatar src={getImageUrl('profileAvatar.png')} alt='Profile-Avatar'
+                        sx={{
+                            width: '150px',
+                            height: '150px',
+                            transition: 'transform 0.3s ease-in-out',
+                            '&:hover': {
+                                transform: 'scale(1.1) rotate(3deg)',
+                                cursor: 'pointer',
+                            },
+                        }} />
+
+                    <Box
+                        sx={{
+                            width: '90%',
+                            height: '10px',
+                            backgroundColor: 'rgba(0,0,0,0.6)',
+                            borderRadius: '50%',
+                            filter: 'blur(6px)',
+                        }}
+                    />
+                </Box>
 
                 {/* About-Description */}
                 < Grid container spacing={4} justifyContent='center'>
