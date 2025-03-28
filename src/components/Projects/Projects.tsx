@@ -1,4 +1,3 @@
-import React from 'react'
 import { getImageUrl } from '../../utils'
 import { Box, Typography, Stack, Card, CardContent, Divider } from '@mui/material'
 import {

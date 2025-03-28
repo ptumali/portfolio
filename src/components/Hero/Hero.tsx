@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { getImageUrl } from '../../utils'
 import { Box, Button, Typography, Stack } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

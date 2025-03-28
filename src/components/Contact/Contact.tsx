@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import { Alert, Box, Snackbar, Stack, Typography, } from '@mui/material'
 import { MailOutlineRounded } from '@mui/icons-material'
@@ -9,7 +8,7 @@ import { getImageUrl } from '../../utils';
 export const Contact = () => {
     const [open, setOpen] = useState(false);
 
-    const copyToClipboard = async (e) => {
+    const copyToClipboard = async (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         try {
             await navigator.clipboard.writeText('tumalipeter8@gmail.com');
