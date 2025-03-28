@@ -1,4 +1,3 @@
-import { Directions } from '@mui/icons-material';
 import { getImageUrl } from '../../utils'
 import { Box, Typography, Avatar, Chip, Grid } from '@mui/material'
 
