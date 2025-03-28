@@ -25,8 +25,8 @@ export const About = () => {
                 flexDirection: 'column',
                 padding: {
                     xs: '50px 50px',
-                    sm: '100px 80px',
-                    md: '120px 100px',
+                    sm: '70px 80px',
+                    md: '80px 100px',
                 },
                 zIndex: 30,
             }}>
@@ -38,7 +38,7 @@ export const About = () => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    gap: '22px',
+                    gap: '50px',
                     zIndex: 31,
                 }}>
 
